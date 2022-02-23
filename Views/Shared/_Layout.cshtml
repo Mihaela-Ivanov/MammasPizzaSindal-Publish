@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MammasPizzaSindal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="About">MammasPizzaSindal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Menukort</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">Mad med kærlighed</a>
+                        </li> @*
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Ingredients" asp-action="Index">Ingredients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Categories" asp-action="Index">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Menus" asp-action="Index">Menus</a>
+                        </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div><!--END container-->
+    <!-- Footer -->
+  <footer class="bg-dark text-left text-lg-start text-white">
+    <!-- Grid container for Footer -->
+    <div class="container p-4 pb-0">
+      <!-- Section: High -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Find os
+            </h6>
+            <p>
+              <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Contact">På Goole Maps</a>
+            </p>
+          </div><!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Åbningstider</h6>
+            <table class="table table-responsive table-sm d-sm-table-row bg-light text-dark">
+                        <tr>
+                          <td id="openinghours_title" colspan="2">
+                            Kig forbi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td id="openinghours_days1">Mandag-Fredag:</td>
+                          <td id="openinghours_hours1">11:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                          <td id="openinghours_days2">L&oslashrdag</td>
+                          <td id="openinghours_hours2">11:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                          <td id="openinghours_days2">S&oslashndag og helligdage:</td>
+                          <td id="openinghours_hours2">12:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <i>(Køkkenet likker en halv time f&oslashr lukketid)</i>
+                          </td>
+                        </tr>
+                      </table>
+          </div><!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Om websiden</h6>
+            <p>
+              Webside udbudt af <i>Mihaela Ivanov</i>
+              Datateknikker - Programmør. <br/>
+              Kontakt for at få lavet en hjemmeside på: <br/>
+              tlf.: <a class="h6 tlf" href="tel:004540189774">40 18 97 74</a><br/>
+              og få en snak om de funktioner, netop du/I har brug for, <br/>
+              så finder vi et godt tilbud til dig/Jer.  
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div><!--Grid row-->
+      </section><!--END Section High-->
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Low -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          
+          <!-- Grid column for CopyRight -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start"> 
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2022 Copyright:
+              <a href="https://badilli-fm.dk/">Mihaela Ivanov</a>
+            </div><!--END Copyright -->
+          </div><!--END Grid column -->
+
+          <!-- Grid column for SocialMedia -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="fa fa-facebook" href="https://www.facebook.com/Mammas-Pizza-og-Restaurant-Sindal-287159948385481" target="_blank"><br/>Facebook</a>
+          </div><!--END Grid column -->
+
+        </div><!--END row low -->
+      </section><!--END Section: Low -->
+    </div><!--END Grid container for Footer -->
+  </footer>
+  
+  <!-- Footer -->
+ 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
