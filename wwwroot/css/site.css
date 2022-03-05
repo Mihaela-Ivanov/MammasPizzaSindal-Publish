@@ -71,3 +71,194 @@ body {
 }
 /* Custom styles
 ______________________________________________*/
+
+/*------------------ LUKAS CODE START ----------------- */
+
+/* ----------------- GLOBAL START --------------- */
+
+p{
+  color: #fdfdfd;
+  font-size: 18px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  text-align: center;
+}
+
+.title{
+color: #fdfdfd;
+font-size: 24px;
+}
+
+.imp-text{
+font-size: 21px;
+}
+
+/*GLOBAL END*/
+
+
+.info-section{
+  background: rgb(193,143,92);
+  background: linear-gradient(90deg, rgba(193,143,92,1) 0%, rgba(158,117,64,1) 49%, rgba(193,143,92,1) 100%);  display: flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* --------------- OPENING HOURS START ------------------*/
+
+.opening-hours-article{
+
+}
+
+.title{
+font-size: 27px;
+margin-bottom: 10px;
+}
+
+.opening-hours-div{
+  position: relative;
+  width: 50vw;
+  min-width: 260px;
+  height: 50px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.opening-hours-info{
+  font-weight: bold;
+  position: absolute;
+  font-size: 21px;
+}
+.opening-hours-day{
+left: 0px;
+}
+.opening-hours-hours{
+  right: 0px;
+}
+.work-around{
+  height: 83px;
+}
+
+.div-line{
+height: 1px;
+background-color: #fdfdfd;
+width: 105%;
+position: absolute;
+bottom: 5px;
+}
+
+/*----------------- CONTACT START -----------------*/
+
+.contact-article{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.phone-div{
+position: relative;
+display: flex;
+justify-content: center;
+font-size: 21px;
+}
+
+#adress-link{
+  color:#fdfdfd ;
+}
+
+#google-map{
+width: 70vw;
+height: 70vw;
+max-height: 1000px;
+max-width: 1500px;
+}
+
+/*------------------- WELCOME START -------------------*/
+
+.welcome-text{
+  width: 70vw;
+}
+
+/*----------------------- FABEBOOK -------------- */
+.facebook{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px white;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.facebook i{
+  font-size: 50px;
+  color: white;
+}
+.facebook p{
+  margin: 0;
+  font-size: 21px;
+}
+
+/*------------------- FOOTER START -------------------*/
+#footer{
+padding: 40px 15vw 20px 15vw;
+background-color: #343A40;
+display: grid;
+grid-template-columns: 33% 33% 33%;
+
+color: #E8E8E8;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+line-height: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+#footer{
+  grid-template-columns: 33%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+}
+
+.footer-list{
+list-style: none;
+}
+
+.list-header{
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+
+.opening-hours{
+display: flex;
+min-width: 250px;
+}
+
+#opening-hours-title-display-none{
+opacity: 0;
+}
+
+.opening-hours-list{
+margin-left: -23px;
+}
+
+/*FOOTER END*/
+
+
+
+
+/* Lukas code end */
