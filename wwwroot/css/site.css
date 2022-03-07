@@ -61,6 +61,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+margin-left: 0;
+margin-right: 0;
 }
 .footer {
   position: absolute;
@@ -71,3 +73,279 @@ body {
 }
 /* Custom styles
 ______________________________________________*/
+
+/*------------------ LUKAS CODE START ----------------- */
+
+*{
+  scroll-behavior: smooth;
+}
+
+/* ----------------- GLOBAL START --------------- */
+
+p{
+  color: #fdfdfd;
+  font-size: 18px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  text-align: center;
+}
+
+.title{
+color: #fdfdfd;
+font-size: 24px;
+}
+
+.imp-text{
+font-size: 21px;
+}
+
+/*GLOBAL END*/
+
+/*----------------- NAVBAR START --------------------------*/
+
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgb(59 59 59);
+  z-index: 5;
+  height: 52px;
+}
+
+#navbar a{
+  text-decoration: none;
+}
+
+#logo{
+height: 35px;
+width: 400px;
+background-color: rgb(0, 0, 0);
+margin-right: auto;
+margin: 5px auto 5px 15px ;
+}
+
+.nav-btn{
+  background-color: rgb(77 77 77);
+  margin: 2px 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+}
+.nav-btn p{
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  font-size: 16px;
+}
+.nav-btn i{
+  font-size: 18px;
+  margin: 5px;
+}
+
+.nav-btn:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+}
+
+@media screen and (max-width: 800px) {
+  #navbar p{
+    display: none;
+  }
+.nav-btn{
+  margin: 7px;
+}
+#navbar{
+  height: 44px;
+}
+
+
+}
+
+
+/*----------------- NAVBAR END --------------------------*/
+
+
+.info-section{
+  background: #9E754D;
+  background: linear-gradient(90deg, rgba(193,143,92,1) 0%, rgba(158,117,64,1) 49%, rgba(193,143,92,1) 100%);  display: flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* --------------- OPENING HOURS START ------------------*/
+
+.opening-hours-article{
+
+}
+
+.title{
+font-size: 27px;
+margin-bottom: 10px;
+}
+
+.opening-hours-div{
+  position: relative;
+  width: 50vw;
+  min-width: 260px;
+  height: 50px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.opening-hours-info{
+  font-weight: bold;
+  position: absolute;
+  font-size: 21px;
+}
+.opening-hours-day{
+left: 0px;
+}
+.opening-hours-hours{
+  right: 0px;
+}
+.work-around{
+  height: 83px;
+}
+
+.div-line{
+height: 1px;
+background-color: #fdfdfd;
+width: 105%;
+position: absolute;
+bottom: 0px;
+}
+
+/*----------------- CONTACT START -----------------*/
+
+.contact-article{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.phone-div{
+position: relative;
+display: flex;
+justify-content: center;
+font-size: 21px;
+}
+
+#adress-link{
+  color:#fdfdfd ;
+}
+
+#google-map{
+width: 70vw;
+height: 35vw;
+max-height: 1000px;
+max-width: 1500px;
+}
+
+@media screen and (max-width: 700px){
+  #google-map{
+    height: 40vh;
+  }
+}
+
+/*------------------- WELCOME START -------------------*/
+
+.welcome-text{
+  width: 70vw;
+}
+
+/*----------------------- FABEBOOK -------------- */
+.facebook{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px white;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.facebook i{
+  font-size: 50px;
+  color: white;
+}
+.facebook p{
+  margin: 0;
+  font-size: 21px;
+}
+
+.facebook:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+}
+
+/*------------------- FOOTER START -------------------*/
+#footer{
+padding: 40px 15vw 20px 15vw;
+background-color: #343A40;
+display: grid;
+grid-template-columns: 33% 33% 33%;
+
+color: #E8E8E8;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+line-height: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+#footer{
+  grid-template-columns: 33%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+}
+
+.footer-list{
+list-style: none;
+}
+
+.list-header{
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+
+.opening-hours{
+display: flex;
+min-width: 250px;
+}
+
+#opening-hours-title-display-none{
+opacity: 0;
+}
+
+.opening-hours-list{
+margin-left: -23px;
+}
+
+/*FOOTER END*/
+
+
+
+
+/* Lukas code end */
