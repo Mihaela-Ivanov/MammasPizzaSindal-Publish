@@ -61,6 +61,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+margin-left: 0;
+margin-right: 0;
 }
 .footer {
   position: absolute;
@@ -73,6 +75,10 @@ body {
 ______________________________________________*/
 
 /*------------------ LUKAS CODE START ----------------- */
+
+*{
+  scroll-behavior: smooth;
+}
 
 /* ----------------- GLOBAL START --------------- */
 
@@ -102,9 +108,77 @@ font-size: 21px;
 
 /*GLOBAL END*/
 
+/*----------------- NAVBAR START --------------------------*/
+
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgb(59 59 59);
+  z-index: 5;
+  height: 52px;
+}
+
+#navbar a{
+  text-decoration: none;
+}
+
+#logo{
+height: 35px;
+width: 400px;
+background-color: rgb(0, 0, 0);
+margin-right: auto;
+margin: 5px auto 5px 15px ;
+}
+
+.nav-btn{
+  background-color: rgb(77 77 77);
+  margin: 2px 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+}
+.nav-btn p{
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  font-size: 16px;
+}
+.nav-btn i{
+  font-size: 18px;
+  margin: 5px;
+}
+
+.nav-btn:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+}
+
+@media screen and (max-width: 800px) {
+  #navbar p{
+    display: none;
+  }
+.nav-btn{
+  margin: 7px;
+}
+#navbar{
+  height: 44px;
+}
+
+
+}
+
+
+/*----------------- NAVBAR END --------------------------*/
+
 
 .info-section{
-  background: rgb(193,143,92);
+  background: #9E754D;
   background: linear-gradient(90deg, rgba(193,143,92,1) 0%, rgba(158,117,64,1) 49%, rgba(193,143,92,1) 100%);  display: flex;
   display: flex;
   align-items: center;
@@ -152,7 +226,7 @@ height: 1px;
 background-color: #fdfdfd;
 width: 105%;
 position: absolute;
-bottom: 5px;
+bottom: 0px;
 }
 
 /*----------------- CONTACT START -----------------*/
@@ -177,9 +251,15 @@ font-size: 21px;
 
 #google-map{
 width: 70vw;
-height: 70vw;
+height: 35vw;
 max-height: 1000px;
 max-width: 1500px;
+}
+
+@media screen and (max-width: 700px){
+  #google-map{
+    height: 40vh;
+  }
 }
 
 /*------------------- WELCOME START -------------------*/
@@ -198,6 +278,7 @@ max-width: 1500px;
   border-radius: 5px;
   margin: 30px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .facebook i{
@@ -207,6 +288,12 @@ max-width: 1500px;
 .facebook p{
   margin: 0;
   font-size: 21px;
+}
+
+.facebook:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
 }
 
 /*------------------- FOOTER START -------------------*/
