@@ -22,6 +22,11 @@ namespace MammasPizzaSindal.Controllers
         {
             return View();
         }
+        
+        public IActionResult IndexLukas()
+        {
+            return View();
+        }
 
         public IActionResult About()
         {
