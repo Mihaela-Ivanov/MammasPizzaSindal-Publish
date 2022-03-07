@@ -107,7 +107,10 @@ font-size: 24px;
 }
 
 .imp-text{
-font-size: 21px;
+    font-size: 21px;
+}
+.imp-text a{
+    color: rgb(59 59 59);
 }
 
 /*GLOBAL END*/
