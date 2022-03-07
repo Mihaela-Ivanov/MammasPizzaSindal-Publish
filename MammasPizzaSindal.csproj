@@ -5,4 +5,17 @@
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\img\MPSbulent.jpg" />
+    <None Include="wwwroot\img\MPSbygning.jpg" />
+    <None Include="wwwroot\img\MPSbygningInde.jpg" />
+    <None Include="wwwroot\img\MPSbygningUde2.jpg" />
+    <None Include="wwwroot\img\MPSfolkInde.jpg" />
+    <None Include="wwwroot\img\MPSfolkUde.jpg" />
+    <None Include="wwwroot\img\MPSlogo.PNG" />
+    <None Include="wwwroot\img\MPSmad1.jpg" />
+    <None Include="wwwroot\img\MPSmad2.jpg" />
+    <None Include="wwwroot\img\MPSmammasMamma.jpg" />
+  </ItemGroup>
+
 </Project>
