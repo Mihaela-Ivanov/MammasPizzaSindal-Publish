@@ -87,6 +87,17 @@ ______________________________________________*/
     margin: 5%;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Lucida Handwriting';
+}
+
+h4 {
+    border: 2px solid rgba(193,143,92,1);
+    border-radius: 25px;
+    padding: 10px;
+}
+
 p {
     color: #fdfdfd;
     font-size: 18px;
@@ -111,12 +122,6 @@ font-size: 24px;
 }
 .imp-text a{
     color: rgb(59 59 59);
-}
-
-h4{
-    border: 2px solid rgba(193,143,92,1);
-    border-radius: 25px;
-    padding: 10px;
 }
 
 /*GLOBAL END*/
@@ -257,7 +262,6 @@ bottom: 0px;
 
 /*----------------- CONTACT START -----------------*/
 #hero-section {
-    font-family: 'Brush Script MT';
     align-content: center; /*I guess center is smart, you know best withh all style of this section. can also be a 'carousel' with some photos as I had before the Sony-Guy*/
 }
 
