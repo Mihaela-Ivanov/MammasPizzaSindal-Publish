@@ -87,15 +87,20 @@ ______________________________________________*/
     margin: 5%;
 }
 
-h1 {
+.h1Special {
     text-align: center;
     font-family: 'Lucida Handwriting';
 }
 
 h4 {
     border: 2px solid rgba(193,143,92,1);
-    border-radius: 25px;
+    border-top: 4px solid rgb(59 59 59);
+    box-shadow: 0px 4px 0px 0px rgba(114, 104, 104, 0.5) inset;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(193,143,92,1);
     padding: 10px;
+    color: #fdfdfd;
 }
 
 p {
@@ -331,8 +336,8 @@ max-width: 1500px;
 }
 
 /*------------------- MENU CARD START -------------------*/
-.menuCard{
-    padding: 10px;
+.menuCard .row{
+    border-top: 1px solid rgba(193,143,92,1);
 }
 
 /*------------------- FOOTER START -------------------*/
