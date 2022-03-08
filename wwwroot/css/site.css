@@ -64,13 +64,7 @@ body {
 margin-left: 0;
 margin-right: 0;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-}
+
 /* Custom styles
 ______________________________________________*/
 
@@ -173,8 +167,79 @@ margin: 5px auto 5px 15px ;
 
 }
 
-
 /*----------------- NAVBAR END --------------------------*/
+
+
+/*----------------- HEADER START ------------------------*/
+
+#img-wrapper{
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-blur{
+  background-image: url(../img/MPSbygningInde.jpg);
+  background-position-y: -60px;
+  overflow: hidden;
+  filter: blur(6px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#img-front-wrapper{
+  width: 60%;
+  position: absolute;
+}
+#img-front{
+background-image: url(../img/Mamman-pezzeria.jpg);
+width: 100%;
+border: solid 5px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+  #img-wrapper{
+    height: 30vh;
+  }
+}
+
+/*Breakfirst*/
+
+#hero-article{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#hero-article h1{
+  font-size: 25px;
+}
+#hero-article h2{
+  font-size: 22px;
+
+}
+
+.hero-list-div{
+  display: flex;
+}
+
+.hero-list-1{
+list-style: none;
+text-align: end;
+}
+
+.hero-list-2{
+list-style: none;
+text-align: start;
+
+}
+
+
+/*----------------- HEADER END ------------------------*/
 
 
 .info-section{
