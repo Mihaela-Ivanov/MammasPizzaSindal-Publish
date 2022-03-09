@@ -4,4 +4,16 @@
 // Write your JavaScript code.
 
 
-console.log("hej")
+const mobileMenu = document.querySelector('#mobile-hamburger-menu');
+const hamburgerBtn = document.querySelector('#hamburger-btn');
+
+let menuToggle = true
+
+hamburgerBtn.addEventListener('click', () => {
+    menuToggle ? mobileMenu.style='width: 193px' : mobileMenu.style='width: 0px'
+    menuToggle = !menuToggle
+})
+
+const closeMenu = () => {
+    mobileMenu.style='width: 0px'
+}

@@ -1,72 +1,12 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
+
 
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
 }
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* Custom styles
-______________________________________________*/
 
 /*------------------ LUKAS CODE START ----------------- */
 
@@ -75,6 +15,11 @@ ______________________________________________*/
 }
 
 /* ----------------- GLOBAL START --------------- */
+
+.max-width{
+  max-width: 80rem;
+}
+
 .container { /*Just suggestion*/
     border: solid #9E754D 2px;
     border-radius: 25px;
@@ -120,34 +65,44 @@ font-size: 24px;
   top: 0px;
   background-color: rgb(59 59 59);
   z-index: 5;
-  height: 52px;
+  height: 66px;
 }
 
-#navbar a{
+#navbar a, #mobile-hamburger-menu a{
   text-decoration: none;
 }
 
-#logo {
-    height: 125px;
-    width: 125px;
-    background-image: url('../img/MPSlogoMamma.PNG');
-    /*background-color: rgb(0, 0, 0);*/
-    margin-right: auto;
-    margin: 110px auto 5px 15px; /*Might have to fix to not kill the Mamma by cutting her head 
-        - i really see my old knowlegde and am really thrilled about your help.
-        Okay now I reveilled her, by 110px top, but I think you can do something smarter, 
-        and if you want to change the logo also. We've got all freedom. Maybe txt by or slogan 
-        or whatever is good :) .
-    */
-    border-radius: 25px; /*You can chance*/
+#mobile-hamburger-menu{
+
+  position: fixed;
+  right: 0px;
+  display: none;
+  flex-direction: column;
+  width: 0px;
+  margin-top: 57px;
+  background-color: rgb(255 255 255 / 50%);  
+  z-index: 5;
+  height: 93vh;
+  transition-duration: 0.5s ;
+}
+
+#logo-div {
+height: 100%;
+left: 0px;
+position: absolute;
+margin: 0 15px;
+ 
+}
+#logo-img{
+height: 100%;
 }
 
 .nav-btn{
   background-color: rgb(77 77 77);
-  margin: 2px 15px;
+  margin: 0 15px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 8px 10px;
   transition-duration: 0.5s;
   border-radius: 5px;
 }
@@ -161,23 +116,40 @@ font-size: 24px;
   margin: 5px;
 }
 
-.nav-btn:hover{
-  cursor: pointer;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
-  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+#hamburger-btn{
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
   #navbar p{
     display: none;
   }
-.nav-btn{
-  margin: 7px;
-}
-#navbar{
-  height: 44px;
+
+#logo-img{
+  height: 65%;
+  margin-top: 14px;
 }
 
+#mobile-hamburger-menu{
+  display: flex;
+}
+.hide{
+  display: none;
+}
+#hamburger-btn{
+  display: flex;
+}
+.nav-btn{
+margin: 15px 15px;
+}
+
+.nav-btn i{
+  font-size: 27px;
+  margin: 1px;
+}
+#close-btn{
+  display: none;
+}
 
 }
 
@@ -224,18 +196,41 @@ border: solid 5px rgba(255, 255, 255, 0.5);
 
 #hero-article{
   display: flex;
-  justify-content: center;
+  align-items: center;
   text-align: center;
   flex-direction: column;
+  color: white;
+  background: linear-gradient(90deg, rgba(193,143,92,1) 0%, rgba(158,117,64,1) 49%, rgba(193,143,92,1) 100%);
+  padding: 30px;
 }
 
-#hero-article h1{
-  font-size: 25px;
+.hero-text-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  max-width: 80rem;
 }
+
+.hero-text{
+  width: 30%;
+}
+#hero-article p, #hero-article li{
+font-size: 25px;
+} 
 #hero-article h2{
-  font-size: 22px;
-
+  font-size: 26px;
+  margin: 0 0 30px 0;
 }
+.big-title{
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 30px 0 7px 0;
+}
+#big-number{
+  font-size: 70px;
+  margin: 0 0 0 25px;
+}
+
 
 .hero-list-div{
   display: flex;
@@ -262,13 +257,12 @@ text-align: start;
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 80rem;
 }
 
 /* --------------- OPENING HOURS START ------------------*/
 
-.opening-hours-article{
 
-}
 
 .title{
 font-size: 27px;
@@ -283,6 +277,7 @@ margin-bottom: 10px;
   padding-bottom: 16px;
   display: flex;
   justify-content: center;
+  max-width: 80rem;
 }
 
 .opening-hours-info{
@@ -349,6 +344,7 @@ max-width: 1500px;
 
 .welcome-text{
   width: 70vw;
+  max-width: 80rem;
 }
 
 /*----------------------- FABEBOOK -------------- */
@@ -359,9 +355,9 @@ max-width: 1500px;
   border: solid 1px white;
   padding: 8px;
   border-radius: 5px;
-  margin: 30px;
   cursor: pointer;
   transition-duration: 0.5s;
+  margin-bottom: 30px;
 }
 
 .facebook i{
@@ -372,12 +368,11 @@ max-width: 1500px;
   margin: 0;
   font-size: 21px;
 }
-
-.facebook:hover{
-  cursor: pointer;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
-  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+.no-underline{
+  text-decoration: none;
 }
+
+
 
 /*------------------- FOOTER START -------------------*/
 #footer{
@@ -428,6 +423,22 @@ margin-left: -23px;
 
 /*FOOTER END*/
 
+
+@media screen and (min-width: 700px){
+  .nav-btn:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+  }
+
+  .facebook:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63); 
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.63);
+  }
+
+
+}
 
 
 

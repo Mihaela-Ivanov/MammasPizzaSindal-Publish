@@ -14,32 +14,80 @@
 <!--    INSPITATION CATEGORIS    http://www.pizzeriaportobello.se/    -->
 
 <nav id="navbar">
-    <div id="logo">
-
+    <div id="logo-div">
+        <img id="logo-img" src="../img/Frame 1.png" alt="Logo">
     </div>
-    <a href="#contact-id">
-        <div id="location-btn" class="nav-btn">
+    <a id="nav-menu-id" href="#meny-section">
+        <div class="nav-btn hide">
+            <i  class="fa fa-cutlery" aria-hidden="true"></i>
+            <p>Menu</p>
+        </div>
+       </a>
+    <a id="nav-location-id" href="#contact-id">
+        <div id="location-btn" class="nav-btn hide">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>Finde her</p>
         </div>
     </a>
-    <a href="#opening-hours-id">
-        <div class="nav-btn">
+    <a id="nav-opening-hours-id" href="#opening-hours-id">
+        <div class="nav-btn hide">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
             <p>Åbningstider</p>
         </div>
     </a>
-   <a href="tel:98935566p123">
+   <a id="nav-phone-id" href="tel:98935566p123">
+    <div class="nav-btn hide">
+        <i  class="fa fa-phone" aria-hidden="true"></i>
+        <p>98 93 55 66</p>
+    </div>
+   </a>
+
+<!--open btn-->
+   <a class="nav-btn" id="hamburger-btn">
+    <i id="open-btn" class="fa fa-bars btn" aria-hidden="true"></i>
+    <i id="close-btn" class="fa fa-times btn" aria-hidden="true"></i>
+</a>
+
+<!--close btn-->
+
+
+</nav>
+
+<!-- --------------------------- MOBILE HAMBURGUR MENU START ----------------------------->
+
+
+
+<nav id="mobile-hamburger-menu">
+    <a id="nav-menu-id" href="#meny-section">
+        <div onclick="closeMenu()" class="nav-btn">
+            <i  class="fa fa-cutlery" aria-hidden="true"></i>
+            <p>Menu</p>
+        </div>
+       </a>
+    <a id="nav-location-id" href="#contact-id">
+        <div onclick="closeMenu()" id="location-btn" class="nav-btn">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>Finde her</p>
+        </div>
+    </a>
+    <a id="nav-opening-hours-id" href="#opening-hours-id">
+        <div onclick="closeMenu()" class="nav-btn">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <p>Åbningstider</p>
+        </div>
+    </a>
+   <a id="nav-phone-id" href="tel:98935566p123">
     <div class="nav-btn">
         <i  class="fa fa-phone" aria-hidden="true"></i>
         <p>98 93 55 66</p>
     </div>
    </a>
-    
-
 </nav>
 
-<section id="hero-section">
+<!-- --------------------------- MOBILE HAMBURGUR MENU END ----------------------------->
+
+
+<section onclick="closeMenu()" id="hero-section">
 
     <div id="img-wrapper">
         <div id="img-blur"></div>
@@ -50,27 +98,41 @@
         
     <article id="hero-article">
         <div class="hero">
-            <h1>FROKOSTTILBUD</h1>
+            <h1 class="big-title">FROKOSTTILBUD</h1>
             <h2>Hver dag indtil kl. 15:00</h2>
         </div>
-        <div class="hero-list-div">
-            <ul class="hero-list-1">
-                <li>Pizza</li>
-                <li>Durum</li>
-                <li>Baguette</li>
-            </ul>
-            <ul class="hero-list-2">
-                <li>nr. 1 - 57</li>
-                <li>nr. 89 - 91</li>
-                <li>nr. 120A - 120E</li>
-            </ul>
+        <div class="hero-text-wrapper">
+            <div class="hero-list-div hero-text">
+                <ul class="hero-list-1">
+                    <li>Pizza</li>
+                    <li>Durum</li>
+                    <li>Baguette</li>
+                </ul>
+                <ul class="hero-list-2">
+                    <li>nr. 1 - 57</li>
+                    <li>nr. 89 - 91</li>
+                    <li>nr. 120A - 120E</li>
+                </ul>
+            </div>
+            <div class="hero-middle hero-text">
+                <h1 class="title">FRIT VALG</h1>
+                <h1 id="big-number">55.-</h1>
+            </div>
+            <div class="hero-right hero-text">
+                <p>Frokosttilbud gaelder ikke på helligdage, ved DannaCup samt Sindal marked</p>
+            </div>
         </div>
+       
         
     </article>
    
 </section>
 
-<section class="info-section">
+<section onclick="closeMenu()" id="meny-section">
+
+</section>
+
+<section onclick="closeMenu()" class="info-section">
 
     <article id="opening-hours-id" class="article opening-hours-article">
         <h1 class="title">Åbningstider</h1>
@@ -138,16 +200,18 @@ Frokost tilbud, Pizza, Salat Pizza, Pommes Frites Pizza, Mexicana Pizza, Nachos 
         </p>
     </article>
 
-    <div class="facebook">
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100063504642446"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <p>Facebook</p>
-    </div>
+    <a class="no-underline" target="_blank" href="https://www.facebook.com/profile.php?id=100063504642446">
+        <div class="facebook">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <p>Facebook</p>
+        </div>
+    </a>
 
 </section>
 
 
 
-<footer id="footer">
+<footer onclick="closeMenu()" id="footer">
     <div>
         <ul class="footer-list">
             <li class=" list-header">Find os</li>
