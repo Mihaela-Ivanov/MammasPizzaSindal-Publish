@@ -126,6 +126,7 @@ height: 100%;
   padding: 8px 10px;
   transition-duration: 0.5s;
   border-radius: 5px;
+  white-space: nowrap;
 }
 .nav-btn p{
   color: rgb(255, 255, 255);
