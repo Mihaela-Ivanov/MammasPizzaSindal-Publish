@@ -301,7 +301,7 @@ margin-bottom: 10px;
   padding-bottom: 16px;
   display: flex;
   justify-content: center;
-  max-width: 80rem;
+  max-width: 40rem;
 }
 
 .opening-hours-info{
@@ -406,7 +406,7 @@ max-width: 1500px;
 padding: 40px 15vw 20px 15vw;
 background-color: #343A40;
 display: grid;
-grid-template-columns: 33% 33% 33%;
+grid-template-columns: 50% 50%;
 
 color: #E8E8E8;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -432,16 +432,6 @@ list-style: none;
 .list-header{
 font-weight: bold;
 margin-bottom: 10px;
-}
-
-
-.opening-hours{
-display: flex;
-min-width: 250px;
-}
-
-#opening-hours-title-display-none{
-opacity: 0;
 }
 
 .opening-hours-list{
