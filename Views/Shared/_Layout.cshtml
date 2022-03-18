@@ -11,37 +11,79 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav id="navbar">
-            <!-- LOGO -->
-            <div id="logo">
-                
+        <!-- NAVIGATION DESKTOP -->
+    <nav id="navbar">
+        <!-- DIV LOGO -->
+        <div id="logo-div">
+            <a href="#hero-section">
+                <img id="logo-img" src="../img/Frame 1.png" alt="Logo">
+            </a>
+        </div>
+        <!--END Logo Div-->
+        <!-- LINKS NAVIGATION -->
+        <a id="nav-menu-id" href="#meny-section">
+            <div class="nav-btn hide">
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <p>Menu</p>
             </div>
-            <!-- NAVIGATION -->
-            <a href="#menuCardTable">
-                <div id="location-btn" class="nav-btn">
-                    <i class="fa fa-cutlery" aria-hidden="true"></i>
-                    <p>Menukort</p>
-                </div>
-            </a>
-            <a href="#contact-id">
-                <div id="location-btn" class="nav-btn">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <p>Find os her</p>
-                </div>
-            </a>
-            <a href="#opening-hours-id">
-                <div class="nav-btn">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <p>Åbningstider</p>
-                </div>
-            </a>
-           <a href="tel:004598935566">
-            <div class="nav-btn">
-                <i  class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+        <a id="nav-location-id" href="#contact-id">
+            <div id="location-btn" class="nav-btn hide">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Find os</p>
+            </div>
+        </a>
+        <a id="nav-opening-hours-id" href="#opening-hours-id">
+            <div class="nav-btn hide">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <p>Åbningstider</p>
+            </div>
+        </a>
+        <a id="nav-phone-id" href="tel:98935566">
+            <div class="nav-btn hide">
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 <p>98 93 55 66</p>
             </div>
-           </a>
-        </nav>
+        </a>
+        <!--END Navigation Links-->
+        <!-- NAVIGATION MOBILE -->
+        <a class="nav-btn" id="hamburger-btn">
+            <!--open btn-->
+            <i id="open-btn" class="fa fa-bars btn" aria-hidden="true"></i>
+            <!--close btn-->
+            <i id="close-btn" class="fa fa-times btn" aria-hidden="true"></i>
+        </a>
+        <!--END Mobile Navigation -->
+    </nav>
+    <!--END Navigation Desktop-->
+    <!-- NAVIGATION MOBILE HAMBURGUR MENU -->
+    <nav id="mobile-hamburger-menu">
+        <a id="nav-menu-id" href="#meny-section">
+            <div onclick="closeMenu()" class="nav-btn">
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <p>Menu</p>
+            </div>
+        </a>
+        <a id="nav-location-id" href="#contact-id">
+            <div onclick="closeMenu()" id="location-btn" class="nav-btn">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Finde her</p>
+            </div>
+        </a>
+        <a id="nav-opening-hours-id" href="#opening-hours-id">
+            <div onclick="closeMenu()" class="nav-btn">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <p>Åbningstider</p>
+            </div>
+        </a>
+        <a id="nav-phone-id" href="tel:98935566">
+            <div class="nav-btn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>98 93 55 66</p>s
+            </div>
+        </a>
+    </nav>
+    <!--END Mobile Hamburger Menu-->
     </header>
     <!-- CONTENT -->
     <div class="container">
@@ -50,54 +92,28 @@
         </main>
     </div>
     <!-- FOOTER -->
-    <footer id="footer">
-    <div>
-        <ul class="footer-list">
-            <li class=" list-header">Find os</li>
-            <li><partial name="_MapsGoogle.cshtml" /></li>
-            <li>
-                <br/>
-                <p>
-                    N&oslashrregade 18 - 9870 Sindal
-                    <br/>Bestil på: <a class="h4 tlf" href="tel:004598935566">98 93 55 66</a>
-                </p>
-            </li>
-        </ul>
-    </div>
+    <footer onclick="closeMenu()" id="footer">
+        <div>
+            <ul class="footer-list">
+                <li class=" list-header">Find vej</li>
+                <li><partial name="_MapsGoogle" /></li>
+            </ul>
+        </div>
 
-    <div class="opening-hours">
-        <div class="opening-days-list">
+        <div>
             <ul class="footer-list">
-                <li class=" list-header">Åbningstider</li>
-                <li>Mandag - fredag:</li>
-                <li>Lørdag:</li>
-                <li>Søndag:</li>
+                <li class="footer-item list-header">Webmaster</li>
+                <li class="footer-item">
+                    Webside udbudt af <i>LM-Codes</i>.
+                    Kontakt for at få lavet en hjemmeside på:
+                    tlf.: 40 18 97 74
+                    og få en snak om de funktioner, netop du/I har brug for,
+                    så finder vi et godt tilbud til dig/Jer.
+                </li>
             </ul>
         </div>
-        <div class="opening-hours-list">
-            <ul class="footer-list">
-                <li id="opening-hours-title-display-none" class=" list-header">---</li>
-                <li>11:00-22:00</li>
-                <li>11:00-22:00</li>
-                <li>12:00-22:00</li>
-            </ul>
-        </div>
-       
-    </div>
-    
-    <div>
-        <ul class="footer-list">
-            <li class="footer-item list-header">Om hjemmesiden</li>
-            <li class="footer-item">
-                Webside udbudt af <b>LM-CODES</b>.
-                Kontakt for at få lavet en hjemmeside på:
-                tlf.: 40 18 97 74
-                og få en snak om de funktioner, netop du/I har brug for,
-                så finder vi et godt tilbud til dig/Jer.
-            </li>
-        </ul>
-    </div>
-</footer>
+    </footer>
+    <!--END Footer-->
    
   <!-- INCLUDE SCRIPTS -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

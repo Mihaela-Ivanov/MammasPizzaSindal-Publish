@@ -1,10 +1,39 @@
-﻿<section id="hero-section">
-    <CENTER><!--Move to css-->
-    <img src="img/MPSbygning.jpg" alt="" height="300"> <!--Style in css-->
-    <article>
-        <div>
-            <h1><span class="h1Special">Vi laver mad med kærlighed</span></h1>
+﻿<!-- SECTION HERO -->
+    <section onclick="closeMenu()" id="hero-section">
+        <!-- DIV IMG HERO-->
+        <div id="img-wrapper">
+            <div id="img-blur"></div>
+            <div id="img-front-wrapper">
+                <img id="img-front" src="../img/Mamman-pezzeria.jpg" alt="">
+            </div>
         </div>
-    </article>
-    </CENTER><!--delete when property moved to css-->
-</section>
+        <!--END Hero Image Div-->
+        <!-- ARTICLE HERO FROKOSTTILBUD-->
+        <article id="hero-article">
+            <div class="hero">
+                <h1 class="big-title">FROKOSTTILBUD</h1>
+                <h2>Hver dag indtil kl. 15:00</h2>
+            </div>
+            <div class="hero-text-wrapper">
+                <div class="hero-list-div hero-text">
+                    <ul class="hero-list-1">
+                        <li>Pizza</li>
+                        <li>Durum</li>
+                    </ul>
+                    <ul class="hero-list-2">
+                        <li>nr. 1 - 57</li>
+                        <li>nr. 89 - 91</li>
+                    </ul>
+                </div>
+                <div class="hero-middle hero-text">
+                    <h1 class="title">FRIT VALG</h1>
+                    <h1 id="big-number">55.-</h1>
+                </div>
+                <div class="hero-right hero-text">
+                    <p>Frokosttilbud gaelder ikke på helligdage, ved DannaCup samt Sindal marked</p>
+                </div>
+            </div>
+        </article>
+        <!--END Frokosttilbud Hero Article-->
+    </section>
+    <!--END Hero Section-->

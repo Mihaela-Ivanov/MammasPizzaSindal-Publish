@@ -9,247 +9,249 @@
     <title>Document</title>
 </head>
 <body>
-<!--    STYLE ONE ROW    -->
-<!--    CREATE AND STYLE A HEADER    -->
-<!--    INSPITATION CATEGORIS    http://www.pizzeriaportobello.se/    -->
-
-<nav id="navbar">
-    <div id="logo-div">
-        <img id="logo-img" src="../img/Frame 1.png" alt="Logo">
-    </div>
-    <a id="nav-menu-id" href="#meny-section">
-        <div class="nav-btn hide">
-            <i  class="fa fa-cutlery" aria-hidden="true"></i>
-            <p>Menu</p>
+    <!--    STYLE ONE ROW    -->
+    <!--    CREATE AND STYLE A HEADER    -->
+    <!--    INSPITATION CATEGORIS    http://www.pizzeriaportobello.se/    -->
+    <!-- NAVIGATION DESKTOP -->
+    <nav id="navbar">
+        <!-- DIV LOGO -->
+        <div id="logo-div">
+            <a href="#hero-section">
+                <img id="logo-img" src="../img/Frame 1.png" alt="Logo">
+            </a>
         </div>
-       </a>
-    <a id="nav-location-id" href="#contact-id">
-        <div id="location-btn" class="nav-btn hide">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>Finde her</p>
-        </div>
-    </a>
-    <a id="nav-opening-hours-id" href="#opening-hours-id">
-        <div class="nav-btn hide">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>Åbningstider</p>
-        </div>
-    </a>
-   <a id="nav-phone-id" href="tel:98935566p123">
-    <div class="nav-btn hide">
-        <i  class="fa fa-phone" aria-hidden="true"></i>
-        <p>98 93 55 66</p>
-    </div>
-   </a>
-
-<!--open btn-->
-   <a class="nav-btn" id="hamburger-btn">
-    <i id="open-btn" class="fa fa-bars btn" aria-hidden="true"></i>
-    <i id="close-btn" class="fa fa-times btn" aria-hidden="true"></i>
-</a>
-
-<!--close btn-->
-
-
-</nav>
-
-<!-- --------------------------- MOBILE HAMBURGUR MENU START ----------------------------->
-
-
-
-<nav id="mobile-hamburger-menu">
-    <a id="nav-menu-id" href="#meny-section">
-        <div onclick="closeMenu()" class="nav-btn">
-            <i  class="fa fa-cutlery" aria-hidden="true"></i>
-            <p>Menu</p>
-        </div>
-       </a>
-    <a id="nav-location-id" href="#contact-id">
-        <div onclick="closeMenu()" id="location-btn" class="nav-btn">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>Finde her</p>
-        </div>
-    </a>
-    <a id="nav-opening-hours-id" href="#opening-hours-id">
-        <div onclick="closeMenu()" class="nav-btn">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>Åbningstider</p>
-        </div>
-    </a>
-   <a id="nav-phone-id" href="tel:98935566p123">
-    <div class="nav-btn">
-        <i  class="fa fa-phone" aria-hidden="true"></i>
-        <p>98 93 55 66</p>
-    </div>
-   </a>
-</nav>
-
-<!-- --------------------------- MOBILE HAMBURGUR MENU END ----------------------------->
-
-
-<section onclick="closeMenu()" id="hero-section">
-
-    <div id="img-wrapper">
-        <div id="img-blur"></div>
-        <div id="img-front-wrapper">
-            <img id="img-front" src="../img/Mamman-pezzeria.jpg" alt="">
-        </div>
-    </div>
-        
-    <article id="hero-article">
-        <div class="hero">
-            <h1 class="big-title">FROKOSTTILBUD</h1>
-            <h2>Hver dag indtil kl. 15:00</h2>
-        </div>
-        <div class="hero-text-wrapper">
-            <div class="hero-list-div hero-text">
-                <ul class="hero-list-1">
-                    <li>Pizza</li>
-                    <li>Durum</li>
-                    <li>Baguette</li>
-                </ul>
-                <ul class="hero-list-2">
-                    <li>nr. 1 - 57</li>
-                    <li>nr. 89 - 91</li>
-                    <li>nr. 120A - 120E</li>
-                </ul>
+        <!--END Logo Div-->
+        <!-- LINKS NAVIGATION -->
+        <a id="nav-menu-id" href="#meny-section">
+            <div class="nav-btn hide">
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <p>Menu</p>
             </div>
-            <div class="hero-middle hero-text">
-                <h1 class="title">FRIT VALG</h1>
-                <h1 id="big-number">55.-</h1>
+        </a>
+        <a id="nav-location-id" href="#contact-id">
+            <div id="location-btn" class="nav-btn hide">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Find os</p>
             </div>
-            <div class="hero-right hero-text">
-                <p>Frokosttilbud gaelder ikke på helligdage, ved DannaCup samt Sindal marked</p>
+        </a>
+        <a id="nav-opening-hours-id" href="#opening-hours-id">
+            <div class="nav-btn hide">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <p>Åbningstider</p>
+            </div>
+        </a>
+        <a id="nav-phone-id" href="tel:004598935566">
+            <div class="nav-btn hide">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>98 93 55 66</p>
+            </div>
+        </a>
+        <!--END Navigation Links-->
+        <!-- NAVIGATION MOBILE -->
+        <a class="nav-btn" id="hamburger-btn">
+            <!--open btn-->
+            <i id="open-btn" class="fa fa-bars btn" aria-hidden="true"></i>
+            <!--close btn-->
+            <i id="close-btn" class="fa fa-times btn" aria-hidden="true"></i>
+        </a>
+        <!--END Mobile Navigation -->
+    </nav>
+    <!--END Navigation Desktop-->
+    <!-- NAVIGATION MOBILE HAMBURGUR MENU -->
+    <nav id="mobile-hamburger-menu">
+        <a id="nav-menu-id" href="#meny-section">
+            <div onclick="closeMenu()" class="nav-btn">
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <p>Menu</p>
+            </div>
+        </a>
+        <a id="nav-location-id" href="#contact-id">
+            <div onclick="closeMenu()" id="location-btn" class="nav-btn">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Finde her</p>
+            </div>
+        </a>
+        <a id="nav-opening-hours-id" href="#opening-hours-id">
+            <div onclick="closeMenu()" class="nav-btn">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <p>Åbningstider</p>
+            </div>
+        </a>
+        <a id="nav-phone-id" href="tel:98935566">
+            <div class="nav-btn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>98 93 55 66</p>
+            </div>
+        </a>
+    </nav>
+    <!--END Mobile Hamburger Menu-->
+    <!-- SECTION HERO -->
+    <section onclick="closeMenu()" id="hero-section">
+        <!-- DIV IMG HERO-->
+        <div id="img-wrapper">
+            <div id="img-blur"></div>
+            <div id="img-front-wrapper">
+                <img id="img-front" src="../img/Mamman-pezzeria.jpg" alt="">
             </div>
         </div>
-       
-        
-    </article>
-   
-</section>
+        <!--END Hero Image Div-->
+        <!-- ARTICLE HERO FROKOSTTILBUD-->
+        <article id="hero-article">
+            <div class="hero">
+                <h1 class="big-title">FROKOSTTILBUD</h1>
+                <h2>Hver dag indtil kl. 15:00</h2>
+            </div>
+            <div class="hero-text-wrapper">
+                <div class="hero-list-div hero-text">
+                    <ul class="hero-list-1">
+                        <li>Pizza</li>
+                        <li>Durum</li>
+                    </ul>
+                    <ul class="hero-list-2">
+                        <li>nr. 1 - 57</li>
+                        <li>nr. 89 - 91</li>
+                    </ul>
+                </div>
+                <div class="hero-middle hero-text">
+                    <h1 class="title">FRIT VALG</h1>
+                    <h1 id="big-number">55.-</h1>
+                </div>
+                <div class="hero-right hero-text">
+                    <p>Frokosttilbud gaelder ikke på helligdage, ved DannaCup samt Sindal marked</p>
+                </div>
+            </div>
+        </article>
+        <!--END Frokosttilbud Hero Article-->
+    </section>
+    <!--END Hero Section-->
+    <!-- SECTION MENUCARD-->
+    <section onclick="closeMenu()" class="info-section" id="meny-section">
+        <h1 class="big-title">Menukort</h1>
+        <article id="meny-content">
+        </article>
+    </section>
+    <!--END MenuCard Section-->
+    <!-- SECTION INFO -->
+    <section class="info-section">
+        <!-- ARTICLE OPENING HOURS -->
+        <article id="opening-hours-id" class="article opening-hours-article">
+            <h1 class="big-title">Åbningstider</h1>
+            <h1 class="title">Sommertid</h1>
+            <div class="opening-hours-div">
+                <p class="opening-hours-info opening-hours-day">Mandag - lørdag</p>
+                <p class="opening-hours-info opening-hours-hours">11:00-22:00</p>
+                <div class="div-line"></div>
+            </div>
 
-<section onclick="closeMenu()" class="info-section" id="meny-section">
-    <h1 class="big-title">Menu</h1>
-    <article id="meny-content">
+            <div class="opening-hours-div">
+                <p class="opening-hours-info opening-hours-day">Søndag</p>
+                <p class="opening-hours-info opening-hours-hours">12:00-22:00</p>
+                <div class="div-line"></div>
+            </div>
 
-    </article>
-</section>
+            <h1 class="title">Vintertid</h1>
 
-<section onclick="closeMenu()" class="info-section">
+            <div class="opening-hours-div">
+                <p class="opening-hours-info opening-hours-day">Mandag - Torsdag</p>
+                <p class="opening-hours-info opening-hours-hours">11:00-21:00</p>
+                <div class="div-line"></div>
+            </div>
 
-            <!-- OPENING HOURS START -->
+            <div class="opening-hours-div">
+                <p class="opening-hours-info opening-hours-day">Fredag - Lørdag</p>
+                <p class="opening-hours-info opening-hours-hours">11:00-22:00</p>
+                <div class="div-line"></div>
+            </div>
 
-    <article id="opening-hours-id" class="article opening-hours-article">
-        <h1 class="big-title">Åbningstider</h1>
-        <h1 class="title">Sommertid</h1>
-        <div class="opening-hours-div">
-            <p class="opening-hours-info opening-hours-day">Mandag - lørdag</p>
-            <p class="opening-hours-info opening-hours-hours">11:00-22:00</p>
-            <div class="div-line"></div>
+            <div class="opening-hours-div">
+                <p class="opening-hours-info opening-hours-day">Søndag</p>
+                <p class="opening-hours-info opening-hours-hours">12:00-21:00</p>
+                <div class="div-line"></div>
+            </div>
+
+            <div class="opening-hours-div opening-hours-text-div work-around">
+                <p class="opening-hours-info">Køkkenet likker en halv time <br> før lukketid</p>
+                <div class="div-line"></div>
+            </div>
+        </article>
+        <!--END Opening Hours Article-->
+        <!-- ARTICLE CONTACT -->
+        <article id="contact-id" class="article contact-article">
+            <h1 class="title">Kontakt</h1>
+            <!-- PHONE -->
+            <div class="phone-div">
+                <p class="imp-text">Ring og bestil på tlf.:<span class="imp-text-white"><a href="tel:98935566"> 98 93 55 66</a></span></p>
+                <div class="div-line"></div>
+            </div>
+            <!--END Phone-->
+            <!-- MAPS GOOGLE -->
+            <p class="imp-text">Nørregade 18 - 9870 Sindal</p>
+            <partial name="_MapsGoogle" />
+            <!--END Maps Google-->
+        </article>
+        <!--END Contact Article-->
+        <!-- ARTICLE WELCOME -->
+        <article class="article">
+            <h1 class="title">Velkommen til Mamma's Pizza & Restaurant!</h1>
+            <p class="imp-text welcome-text">
+                Med 25 års erfaring inden for branchen laver vi på Mamma's Pizza & Restaurant mad med kærlighed, da vi har en stor passion for god madlavning og l&aegger en ære i, at give vores kunder en god oplevelse i smukke og hyggelige omgivelser.
+                <br />
+                <br />
+                Gør din dag lidt lette, spring madlavningen kom og få lækker mad fra os.
+                Vi har en menu med et bredt udvalg, hvor du finder noget for en hver smag.
+                <br />
+                <br />
+                Hos os finder du både mad til hverdagen, noget hurtigt på vejen, og til dage med
+                lidt ekstra forkælelse, hvor vi bl.a. tilbyder steak, der kan nydes med lækre drikkevarer.
+                <br />
+                <br />
+                Så skal hverdagen piftes op med en hyggeligt tur på restaurant, kan I komme til vores flotte
+                restaurant og blive forkælet med forret, hovedret, desert og fine drikkevarer til og efter maden.
+                <br />
+                <br />
+                Er du ude efter frokost, har vi specielle frokosttilbud af et udvalg fra menuen.
+                Har du lyst til pizza har vi et bredt udvalg af forskellige typer og spændene pizzaer.
+                Få mad til hele familien, hvor vi naturligvis har en speciel børnemenu til børnene.
+                <br />
+                <br />
+                Se vores menukort, og find lige præcis det, du har lyst til, hvor du kan vælge mellem:
+            </p>
+        </article>
+        <!--END Welcome Article-->
+        <!-- LINK FACEBOOK -->
+        <a class="no-underline" target="_blank" href="https://www.facebook.com/profile.php?id=100063504642446">
+            <div class="facebook">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <p>Facebook</p>
+            </div>
+        </a>
+        <!--END Facebook Link-->
+    </section>
+    <!--END Info Section-->
+    <!-- FOOTER -->
+    <footer onclick="closeMenu()" id="footer">
+        <div>
+            <ul class="footer-list">
+                <li class=" list-header">Find vej</li>
+                <li><partial name="_MapsGoogle" /></li>
+            </ul>
         </div>
 
-        <div class="opening-hours-div">
-            <p class="opening-hours-info opening-hours-day">Søndag</p>
-            <p class="opening-hours-info opening-hours-hours">12:00-22:00</p>
-            <div class="div-line"></div>
+        <div>
+            <ul class="footer-list">
+                <li class="footer-item list-header">Webmaster</li>
+                <li class="footer-item">
+                    Webside udbudt af <i>LM-Codes</i>.
+                    Kontakt for at få lavet en hjemmeside på:
+                    tlf.: 40 18 97 74
+                    og få en snak om de funktioner, netop du/I har brug for,
+                    så finder vi et godt tilbud til dig/Jer.
+                </li>
+            </ul>
         </div>
+    </footer>
+    <!--END Footer-->
 
-        <h1 class="title">Vintertid</h1>
-
-        <div class="opening-hours-div">
-            <p class="opening-hours-info opening-hours-day">Lodde</p>
-            <p class="opening-hours-info opening-hours-hours">11:00-22:00</p>
-            <div class="div-line"></div>
-        </div>
-
-        <div class="opening-hours-div">
-            <p class="opening-hours-info opening-hours-day">Søndag</p>
-            <p class="opening-hours-info opening-hours-hours">12:00-22:00</p>
-            <div class="div-line"></div>
-        </div>
-
-        <div class="opening-hours-div opening-hours-text-div work-around">
-            <p class="opening-hours-info">Køkkenet likker en halv time <br> før lukketid</p>
-            <div class="div-line"></div>
-        </div>
-    </article>
-            <!-- OPENING HOURS END -->
-
-
-    <article id="contact-id" class="article contact-article">
-        <h1 class="title">Contact</h1>
-        <div class="phone-div">
-            <p class="imp-text">Phone: 98 93 55 66</p>
-            <div class="div-line"></div>
-        </div>
-            
-        <p><a target="_blank" class="imp-text" id="adress-link" href="https://www.google.com/maps/place/N%C3%B8rregade+18,+9870+Sindal,+Danmark/@57.4721794,10.2000778,16.73z/data=!4m5!3m4!1s0x464f330f2a90ba79:0x12c85acd177e42cb!8m2!3d57.4723355!4d10.2026228?hl=sv">Adress: <br>Nørregade 18, 9870 Sindal, Denmark</a></p>
-        <iframe  id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2588.3883490440935!2d10.200077786709636!3d57.47217944857666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f330f2a90ba79%3A0x12c85acd177e42cb!2sN%C3%B8rregade%2018%2C%209870%20Sindal%2C%20Danmark!5e0!3m2!1ssv!2sse!4v1646472143227!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </article>
-    <article class="article">
-        <h1 class="title">Velkommen til Mamma's Pizza & Restaurant!</h1>
-        <p class="imp-text welcome-text">
-
-Med 25 års erfaring inden for branchen laver vi på Mamma's Pizza & Restaurant mad med kærlighed, da vi har en stor passion for god madlavning og l&aegger en ære i, at give vores kunder en god oplevelse i smukke og hyggelige omgivelser.
-<br><br>
-
-Gør din dag lidt lette, spring madlavningen kom og få lækker mad fra os.
-Vi har en menu med et bredt udvalg, hvor du finder noget for en hver smag.
-<br><br>
-
-Hos os finder du både mad til hverdagen, noget hurtigt på vejen, og til dage med
-lidt ekstra forkælelse, hvor vi bl.a. tilbyder steak, der kan nydes med lækre drikkevarer.
-<br><br>
-
-Så skal hverdagen piftes op med en hyggeligt tur på restaurant, kan I komme til vores flotte
-restaurant og blive forkælet med forret, hovedret, desert og fine drikkevarer til og efter maden.
-<br><br>
-
-Er du ude efter frokost, har vi specielle frokosttilbud af et udvalg fra menuen.
-Har du lyst til pizza har vi et bredt udvalg af forskellige typer og spændene pizzaer.
-Få mad til hele familien, hvor vi naturligvis har en speciel børnemenu til børnene.
-<br><br>
-
-Se vores menukort, og find lige præcis det, du har lyst til, hvor du kan vælge mellem:
-<br><br>
-
-Frokost tilbud, Pizza, Salat Pizza, Pommes Frites Pizza, Mexicana Pizza, Nachos Pizza, Parma Pizza, Indbagt Pizza, Halvindbagt Pizza, Dobbeltindbagt Pizza, Baguette Sandwich, Ekstra tilbehør, Børnemenu, Hjemmelavet Sandwich, Pastaretter, Specialretter, Burger, Pitabrød, Forretter, Steak, Isdesserter, Kaffe, Drikkevarer, Spiritus, Vin.
-        </p>
-    </article>
-
-    <a class="no-underline" target="_blank" href="https://www.facebook.com/profile.php?id=100063504642446">
-        <div class="facebook">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            <p>Facebook</p>
-        </div>
-    </a>
-
-</section>
-
-
-
-<footer onclick="closeMenu()" id="footer">
-    <div>
-        <ul class="footer-list">
-            <li class=" list-header">Find os</li>
-            <li><a target="_blank" href="https://www.google.com/maps/place/N%C3%B8rregade+18,+9870+Sindal,+Danmark/@57.4721794,10.2000778,16.73z/data=!4m5!3m4!1s0x464f330f2a90ba79:0x12c85acd177e42cb!8m2!3d57.4723355!4d10.2026228?hl=sv">Nørregade 18, <br>9870 Sindal, Denmark</a></li>
-        </ul>
-    </div>
-    
-    <div>
-        <ul class="footer-list">
-            <li class="footer-item list-header">Om hjemmesiden</li>
-            <li class="footer-item">
-                Webside udbudt af Mihaela Ivanov Datateknikker - Programmør.
-                Kontakt for at få lavet en hjemmeside på:
-                tlf.: 40 18 97 74
-                og få en snak om de funktioner, netop du/I har brug for,
-                så finder vi et godt tilbud til dig/Jer.
-            </li>
-        </ul>
-    </div>
-</footer>
-
-<script src="../js/site.js"></script>
+    <script src="../js/site.js"></script>
 </body>
 </html>
